@@ -1,19 +1,2 @@
-
-# dependencies
-**/node_modules
-*.env
-/.pnp
-.pnp.js
-**/**/node_modules/
-*.env
-# testing
-/coverage
-# production
-/build
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+node_modules/
 npm-debug.log*
