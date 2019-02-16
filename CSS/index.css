@@ -149,6 +149,11 @@ h3 {
   font-size: 28px;
   color: #222222;
 }
+h1,
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
 .navigation {
   max-width: auto;
   height: 50px;
@@ -164,7 +169,7 @@ h3 {
 }
 .navbox {
   width: 100vw;
-  height: 78.5vh;
+  height: 100vh;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -186,7 +191,7 @@ h3 {
 }
 .menuClose {
   display: none;
-  right: 0px;
+  margin-right: 85%;
 }
 .footer-block {
   width: 100%;
@@ -213,4 +218,109 @@ h3 {
   color: #FFFFFF;
   text-align: center;
   padding-top: 20px;
+}
+.linkButtonImg {
+  width: 350px;
+  height: 350px;
+  padding-left: 50px;
+  padding-right: 50px;
+  filter: blur(3px);
+}
+.linkButtonImg:hover {
+  filter: blur(0px);
+}
+.linkButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#titleBlock {
+  width: 75%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 220px;
+  padding-top: 80px;
+}
+.fadeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+#logo {
+  width: 750px;
+  height: 150px;
+}
+.servicesAbout {
+  width: 80%;
+}
+.madeUpName {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+}
+.desktopS {
+  display: block;
+  width: 20%;
+  height: 20%;
+}
+.mobileS {
+  display: none;
+}
+.servicesBar {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  width: 80%;
+}
+.container .tabLinks {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 500px;
+}
+.container .tabLinks .link {
+  width: 25%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 35px;
+}
+.link:hover {
+  background-color: #222222;
+  color: #fff;
+}
+.tabContent {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.tabContent .content {
+  display: none;
+  padding-right: 10%;
+}
+.tabContent .tabShow {
+  display: flex;
+}
+.selected {
+  display: visible;
+}
+.mission {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 }
