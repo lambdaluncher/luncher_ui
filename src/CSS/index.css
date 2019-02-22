@@ -155,7 +155,7 @@ h2 {
   font-size: 32px;
 }
 .navigation {
-  max-width: auto;
+  max-width: 100%;
   height: 50px;
   margin: 0px auto;
   display: flex;
@@ -166,6 +166,11 @@ h2 {
 }
 .navigation #openMenu {
   margin-left: 80%;
+}
+#login {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 .navbox {
   width: 100vw;
@@ -195,10 +200,14 @@ h2 {
 }
 .footer-block {
   width: 100%;
-  background-color: #828282;
+  background-color: #131313;
   display: flex;
   align-content: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.footer-block .column {
+  padding-top: 1.5%;
+  text-align: center;
 }
 .footer-block .column h3 {
   font-size: 20px;
@@ -213,7 +222,7 @@ h2 {
 }
 #copyright {
   width: 100%;
-  background-color: #828282;
+  background-color: #131313;
   font-size: 12px;
   color: #FFFFFF;
   text-align: center;
@@ -225,6 +234,7 @@ h2 {
   margin-left: 50px;
   margin-right: 50px;
   border: 5px solid #828282;
+  border-radius: 10px;
   filter: blur(3px);
 }
 .linkButtonImg:hover {
@@ -237,25 +247,29 @@ h2 {
 @media (max-width: 500px) {
   .linkButtons {
     flex-direction: column;
-    width: 100%;
     justify-content: center;
     align-items: center;
   }
 }
-#titleBlock {
+.titleBlock {
   height: 300px;
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
   justify-content: center;
   padding-top: 80px;
 }
 @media (max-width: 500px) {
-  #titleBlock {
-    padding-left: 70px;
+  .titleBlock {
     padding-top: 0px;
+    height: 200px;
   }
+}
+#slogan {
+  font-size: 20pt;
+  color: #828282;
+  padding-top: 0.5%;
+  text-align: center;
 }
 .fadeButton {
   text-align: center;
@@ -275,6 +289,12 @@ h2 {
   font-size: 24pt;
   justify-self: center;
   text-decoration: none;
+  color: #828282;
+}
+#zinger {
+  text-align: center;
+  padding-bottom: 0.5%;
+  color: #828282;
 }
 .servicesAbout {
   width: 80%;
@@ -288,6 +308,15 @@ h2 {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 17.5%;
+}
+.madeUpName p {
+  color: #131313;
+}
+.madeUpName h3 {
+  padding-bottom: 1.5%;
+}
+.madeUpName img {
+  align-self: center;
 }
 .desktopS {
   display: block;
@@ -309,6 +338,12 @@ h2 {
   padding-top: 7.5%;
   padding-bottom: 7.5%;
 }
+@media (max-width: 500px) {
+  .container .tabLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container .tabLinks .link {
   width: 25%;
   padding-top: 25px;
@@ -316,9 +351,16 @@ h2 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 35px;
+  color: #828282;
+}
+@media (max-width: 500px) {
+  .container .tabLinks .link {
+    width: 60%;
+  }
 }
 .link:hover {
   background-color: #222222;
