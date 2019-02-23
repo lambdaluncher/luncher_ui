@@ -155,17 +155,22 @@ h2 {
   font-size: 32px;
 }
 .navigation {
-  max-width: auto;
+  max-width: 100%;
   height: 50px;
   margin: 0px auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   background-color: #131313;
-  padding-left: 7.5%;
   align-items: center;
+  justify-content: space-between;
 }
 .navigation #openMenu {
-  margin-left: 85%;
+  padding-right: 5%;
+}
+#login {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 .navbox {
   width: 100vw;
@@ -193,12 +198,20 @@ h2 {
   display: none;
   margin-right: 85%;
 }
+#logoNav {
+  height: 40px;
+  padding-left: 5%;
+}
 .footer-block {
   width: 100%;
-  background-color: #828282;
+  background-color: #131313;
   display: flex;
   align-content: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.footer-block .column {
+  padding-top: 1.5%;
+  text-align: center;
 }
 .footer-block .column h3 {
   font-size: 20px;
@@ -213,66 +226,117 @@ h2 {
 }
 #copyright {
   width: 100%;
-  background-color: #828282;
+  background-color: #131313;
   font-size: 12px;
   color: #FFFFFF;
   text-align: center;
   padding-top: 20px;
 }
 .linkButtonImg {
-  width: 350px;
+  width: 100%;
   height: 350px;
-  padding-left: 50px;
-  padding-right: 50px;
-  filter: blur(3px);
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 5px solid #828282;
+  border-radius: 10px;
 }
 .linkButtonImg:hover {
-  filter: blur(0px);
+  filter: blur(3px);
 }
 .linkButtons {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-#titleBlock {
-  width: 75%;
+@media (max-width: 500px) {
+  .linkButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.titleBlock {
   height: 300px;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
   justify-content: center;
-  padding-left: 220px;
   padding-top: 80px;
 }
+@media (max-width: 500px) {
+  .titleBlock {
+    padding-top: 0px;
+    height: 200px;
+  }
+}
+#slogan {
+  font-size: 20pt;
+  color: #828282;
+  padding-top: 0.5%;
+  text-align: center;
+}
 .fadeButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 50px;
+  text-align: center;
+  padding: 30px;
+  width: 100%;
 }
 #logo {
   width: 750px;
   height: 150px;
+}
+@media (max-width: 500px) {
+  #logo {
+    width: 150px;
+    height: 75px;
+  }
+}
+.buttonName {
+  font-size: 24pt;
+  justify-self: center;
+  text-decoration: none;
+  color: #828282;
+}
+#zinger {
+  text-align: center;
+  padding-bottom: 12.5%;
+  color: #828282;
 }
 .servicesAbout {
   width: 80%;
 }
 .madeUpName {
   margin: 0 auto;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 15%;
+  border: 2px solid #131313;
+  border-radius: 10px;
+  padding-bottom: 5%;
 }
-.desktopS {
+.madeUpName p {
+  color: #131313;
+}
+.madeUpName h3 {
+  padding-bottom: 1.5%;
+}
+@media (max-width: 500px) {
+  .madeUpName {
+    padding: 2%;
+    text-align: center;
+  }
+}
+.aboutImg {
   display: block;
-  width: 20%;
-  height: 20%;
+  width: 50%;
+  height: 60%;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  .aboutImg {
+    display: none;
+  }
 }
 .mobileS {
   display: none;
@@ -286,7 +350,14 @@ h2 {
 .container .tabLinks {
   display: flex;
   justify-content: space-around;
-  padding-top: 500px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .container .tabLinks {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .tabLinks .link {
   width: 25%;
@@ -295,9 +366,16 @@ h2 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 10px;
   font-weight: bold;
   font-size: 35px;
+  color: #828282;
+}
+@media (max-width: 500px) {
+  .container .tabLinks .link {
+    width: 60%;
+  }
 }
 .link:hover {
   background-color: #222222;
@@ -309,7 +387,6 @@ h2 {
 }
 .tabContent .content {
   display: none;
-  padding-right: 10%;
 }
 .tabContent .tabShow {
   display: flex;
@@ -323,4 +400,12 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 80%;
+}
+.mission h1 {
+  padding-top: 5%;
+  color: #828282;
+}
+.mission h3 {
+  padding-top: 7.5%;
+  text-align: center;
 }
